@@ -31,3 +31,5 @@ make
 ```
 
 The executables are placed in `build/bin/`.
+
+Alternatively, you can use the Docker extension of VSCode.
