@@ -29,3 +29,5 @@ Then compile the code:
 ```bash
 make
 ```
+
+The executables are placed in `build/bin/`.
