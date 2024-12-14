@@ -11,8 +11,15 @@ void record_next_state(TransitionMap& transitions, std::vector<u_int64_t>& count
     if (blink == numBlinks)
     {
         counts[stoneNumber] += 1;
+        // std::cout << counts[stoneNumber] << std::endl;
         return;
     }
+
+    else if (blink == 40)
+    {
+        std::cout << counts[stoneNumber] << std::endl;
+    }
+
 
     if (state == 0)
     {
