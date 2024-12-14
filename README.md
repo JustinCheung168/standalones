@@ -2,7 +2,7 @@
 
 Place where I dump all my miscellaneous one-off C++ stuff.
 
-## Environment Setup
+## Command Line-Based Environment Setup
 
 Setup instructions assume you are at this project's top level.
 
@@ -32,4 +32,18 @@ make
 
 The executables are placed in `build/bin/`.
 
-Alternatively, you can use the Docker extension of VSCode.
+
+## VSCode Environment Setup
+Alternatively, you can use the Docker extension of VSCode. In this case:
+```bash
+./docker/buildContainer.sh
+```
+
+Then reopen the window in a container (lower-left button). `.devcontainer/devcontainer.json` specifies how it is opened.
+
+Then:
+```bash
+mkdir -p build
+cd build
+make ..
+```
