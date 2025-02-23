@@ -15,6 +15,6 @@ echo "Building image: ${IMAGE}"
 docker build -t ${IMAGE} \
     --force-rm \
     --no-cache \
-    --platform linux/amd64 \
     --build-arg DEFAULT_USER=${DEFAULT_USER} \
     .
+    # --platform linux/amd64 \
