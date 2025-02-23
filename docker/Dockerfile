@@ -17,7 +17,7 @@ RUN zypper install -y \
     git
 
 # C++
-ARG GCC_VERSION=10
+ARG GCC_VERSION=13
 RUN zypper install -y \
     gcc${GCC_VERSION}-c++ \
     cmake
